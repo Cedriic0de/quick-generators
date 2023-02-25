@@ -1,0 +1,93 @@
+*,*::before, *::after{
+    box-sizing: border-box; 
+}
+html{
+    margin: 0; 
+}
+body{
+    font-family: "Nutino", "Open Sans", sans-serif;
+    background-color: #11613D;
+    color: #C5D4D9;
+    margin: 0px;
+}
+a, button{
+    padding: 12px;
+    margin: 12px auto;
+    text-decoration: none;
+    line-height: 1.2;  
+    border: none;
+    border-radius: 8px;
+    background-color: #2BED96;
+    color: #000;
+}
+button{
+    opacity: 0.6;
+    color: #fff;
+}
+button:hover{
+    cursor: no-drop;
+}
+a:hover{
+    transition: 0.42s;
+    color: #fff;
+    background-color: #0E75AD;    
+}
+a, footer, button {
+    font-weight: 600;
+}
+/* Multiple Selectors */
+footer,
+.wrapper,
+.projbox1,
+.projbox2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading, 
+.project {
+    text-align: center;
+    padding: 24px;
+}
+
+.projbox1,
+.projbox2 {
+    flex-direction: row;
+}
+
+.heading h1 {
+    text-decoration: overline #2BED96;
+}
+
+.wrapper{
+    margin: 24px auto;
+}
+
+.project{
+    padding: 24px;
+    margin: 16px;
+    border: 2px solid #2BED96;
+    border-radius: 8px;
+}
+
+
+footer{
+    padding: 1em;
+    color: #000;
+}
+footer a{
+    background-color: transparent !important;
+    margin: 0px;
+    padding: 0px 8px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+    .projbox1, .projbox2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+}
