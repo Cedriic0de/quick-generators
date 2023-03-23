@@ -10,7 +10,7 @@ body{
     color: #C5D4D9;
     margin: 0px;
 }
-a, button{
+a{
     padding: 12px;
     margin: 12px auto;
     text-decoration: none;
@@ -20,12 +20,12 @@ a, button{
     background-color: #2BED96;
     color: #000;
 }
+.project a {
+    width: 80%;
+}
 button{
     opacity: 0.6;
     color: #fff;
-}
-button:hover{
-    cursor: no-drop;
 }
 a:hover{
     transition: 0.42s;
@@ -50,10 +50,6 @@ footer,
     padding: 24px;
 }
 
-.projbox1,
-.projbox2 {
-    flex-direction: row;
-}
 
 .heading h1 {
     text-decoration: overline #2BED96;
@@ -68,6 +64,7 @@ footer,
     margin: 16px;
     border: 2px solid #2BED96;
     border-radius: 8px;
+    width: 100%;
 }
 
 
@@ -83,11 +80,19 @@ footer a{
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
-    .projbox1, .projbox2{
+    .projbox1 {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
+        outline: none;  
+    }
+
+    .project{
+        width: 100%;
+    }
+    .project a {
+        width: 75%;
     }
 
 }
